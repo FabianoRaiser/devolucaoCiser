@@ -1,0 +1,54 @@
+{
+  "mercadorias": [
+    {
+      "id": 1,
+      "atendimento": 180000,
+      "nf": "123456",
+      "nome_cliente": "Cliente Exemplo",
+      "transportadora": "Ciser",
+      "dia_autorizado": "01/01/2023",
+      "dia_chegada": "03/01/2023",
+      "status": "A Conferir"
+    },
+    {
+      "id": 2,
+      "atendimento": 180000,
+      "nf": "123456",
+      "nome_cliente": "Cliente Exemplo",
+      "transportadora": "Ciser",
+      "dia_autorizado": "01/01/2023",
+      "dia_chegada": "03/01/2023",
+      "status": "A Conferir"
+    },
+    {
+      "id": 3,
+      "atendimento": 180000,
+      "nf": "123456",
+      "nome_cliente": "Cliente Exemplo",
+      "transportadora": "Ciser",
+      "dia_autorizado": "01/01/2023",
+      "dia_chegada": "03/01/2023",
+      "status": "A Conferir"
+    },
+    {
+      "id": 4,
+      "atendimento": 180000,
+      "nf": "123456",
+      "nome_cliente": "Cliente Exemplo",
+      "transportadora": "Ciser",
+      "dia_autorizado": "01/01/2023",
+      "dia_chegada": "03/01/2023",
+      "status": "A Conferir"
+    },
+    {
+      "id": 5,
+      "atendimento": 180000,
+      "nf": "123456",
+      "nome_cliente": "Cliente Exemplo",
+      "transportadora": "Ciser",
+      "dia_autorizado": "01/01/2023",
+      "dia_chegada": "03/01/2023",
+      "status": "A Conferir"
+    }
+  ]
+}
