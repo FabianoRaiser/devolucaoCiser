@@ -4,11 +4,26 @@ import { Botao } from "components/ui/UI";
 import { MercadoriaModal } from "./MercadoriaModal";
 import { LinhaCard, LinhaExtra, StyledCardMercadoria } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faEllipsis, faTriangleExclamation, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheck,
+  faEllipsis,
+  faTriangleExclamation,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 export const CardMercadoria = ({ mercadoria }) => {
-  console.log(mercadoria);
   const { atendimento, nf, nome_cliente, status } = mercadoria;
+
+  const modalRef = useRef(null);
+
+  const abreModal = () => {
+    modalRef.current.showModal();
+    console.log("abrirModal");
+  };
+  const fechaModal = () => {
+    modalRef.current.close();
+  };
 
   return (
     <StyledCardMercadoria>
@@ -29,18 +44,23 @@ export const CardMercadoria = ({ mercadoria }) => {
         <p>{status}</p>
       </LinhaCard>
       <LinhaExtra>
-        <Botao>
+        <Botao
+          onClick={abreModal}
+        >
           <FontAwesomeIcon
             icon={faEllipsis}
             size="lg"
             style={{ color: "#ffffff" }}
           />
         </Botao>
-        <FontAwesomeIcon icon={faTriangleExclamation} style={{color: "#ffc800",}} />
-        <FontAwesomeIcon icon={faXmark} style={{color: "#ff0000",}} />
-        <FontAwesomeIcon icon={faCheck} style={{color: "#00f531",}} />
+        <FontAwesomeIcon
+          icon={faTriangleExclamation}
+          style={{ color: "#ffc800" }}
+        />
+        <FontAwesomeIcon icon={faXmark} style={{ color: "#ff0000" }} />
+        <FontAwesomeIcon icon={faCheck} style={{ color: "#00f531" }} />
       </LinhaExtra>
-      <MercadoriaModal />
+      <MercadoriaModal ref={modalRef} fechaModal={fechaModal} mercadoria={mercadoria}/>
     </StyledCardMercadoria>
   );
 };

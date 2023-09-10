@@ -14,3 +14,7 @@ export const Botao = styled.button`
 export const Container = styled.section`
     
 `
+
+export const Input = styled.input`
+
+`
