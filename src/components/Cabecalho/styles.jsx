@@ -10,4 +10,6 @@ export const StyledCabecalho = styled.header`
     background-color: ${cor_azulClaro};
 
     color: white;
+
+    position: relative;
 `

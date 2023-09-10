@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Devolução } from './routes/devolucao.jsx';
-import { Transportes } from 'routes/Transportes.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Home } from "routes/Home.jsx"
+import { Devolução } from "routes/Devolucao.jsx";
+import { Transportes } from "routes/Transportes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,21 +13,23 @@ const router = createBrowserRouter([
 
     children: [
       {
+        path: "/",
+        element: <Home />
+      },
+      {
         path: "devolucao",
-        element: <Devolução />
+        element: <Devolução />,
       },
       {
         path: "transportes",
-        element: <Transportes />
-      }
-    ]
-
-
+        element: <Transportes />,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-   <RouterProvider router={router} /> 
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

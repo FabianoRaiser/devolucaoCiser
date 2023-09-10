@@ -10,3 +10,7 @@ export const Botao = styled.button`
 
     border-radius: 0.5rem;
 `
+
+export const Container = styled.section`
+    
+`
