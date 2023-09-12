@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
-    body, button, input {
+    body, button, input, select {
         font-family: 'Open Sans', sans-serif;
     }
 `
