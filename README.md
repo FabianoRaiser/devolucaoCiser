@@ -22,5 +22,36 @@ As tecnologias e linguagens utilizadas nesse projeto são:
 | ------------- | - |
 | ✨ Nome       | **Gerenciamento de Devoluções** |
 | 🏷️ Tecnologias | React, Vite, JavaScript, Styled-Components |
-| 🚀 URL         | **** |
+| 🚀 URL         | devolucao-ciser.vercel.app |
 
+#
+
+## Motivação
+
+Esse projeto tem o intuito de otimizar os processos referentes as mercadorias devolutas dos clientes. O principal objetivo é automatizar e reduzir o número de planilhas de controle não interligadas, inibindo assim os erros e demoras causadas pela necessidade de atualizar os dados em duas ou mais estações de trabalho.
+
+## Implementações a serem feitas
+
+### Página Inicial
+
+:black_square_button: Exibição de informações.
+
+:black_square_button: Mapa da aplicação
+
+### Devolução
+
+
+:black_square_button: Automação das Filas
+
+:black_square_button: Integração com a página de transportes
+
+### Transportes
+
+
+:black_square_button: Criação de Autorização de transporte
+
+:black_square_button: Controle de materiais atrasados
+
+### Faturamento
+
+(em análise)
