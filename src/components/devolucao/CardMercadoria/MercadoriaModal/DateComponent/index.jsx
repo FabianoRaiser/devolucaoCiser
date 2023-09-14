@@ -1,11 +1,10 @@
-import { Input } from "components/ui/UI"
-import { DateLabel } from "./styles"
+import { Input, Label } from "components/ui/UI"
 
 // eslint-disable-next-line react/prop-types
 export const DateComponent = ({ label }) => {
   return (
     <>
-       <DateLabel>{label}</DateLabel>
+       <Label>{label}</Label>
        <Input type="date" />
     </>
   )
