@@ -48,10 +48,14 @@ Esse projeto tem o intuito de otimizar os processos referentes as mercadorias de
 ### Transportes
 
 
-:black_square_button: Criação de Autorização de transporte
+:black_square_button: Modal de Criação de Autorização de transporte
 
 :black_square_button: Controle de materiais atrasados
 
 ### Faturamento
 
 (em análise)
+
+### Gerais
+
+:black_square_button: Integração com o Back-end e o Banco de dados
