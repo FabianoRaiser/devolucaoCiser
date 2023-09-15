@@ -6,6 +6,8 @@ export const StyledCardMercadoria = styled.div`
     flex-direction: column;
     gap: 0.25rem;
 
+    width: 100%;
+
     border-radius: 0.5rem;
     border: 1px solid ${cor_azulClaro};
 

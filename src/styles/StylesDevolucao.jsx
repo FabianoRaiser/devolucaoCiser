@@ -1,4 +1,3 @@
-import { cor_azulEscuro } from "components/ui/variaveis";
 import styled from "styled-components";
 
 export const StyledFilas = styled.section`
@@ -9,17 +8,4 @@ export const StyledFilas = styled.section`
 
   gap: 1em;
 
-  @media (min-width: 31rem) {
-    > section:nth-last-child(even) {
-      border-right: 1px solid ${cor_azulEscuro};
-      padding-right: 1em;
-    }
-  }
-
-  @media (min-width: 64rem) {
-    > section:nth-last-child(n + 2) {
-      border-right: 1px solid ${cor_azulEscuro};
-      padding-right: 1em;
-    }
-  }
 `;
