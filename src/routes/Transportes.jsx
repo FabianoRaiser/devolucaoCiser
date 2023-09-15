@@ -1,6 +1,10 @@
+import { Botao } from "components/ui/UI"
 
 export const Transportes = () => {
   return (
-    <div>Transportes</div>
+    <main>
+      <Botao>Nova Autorização</Botao>  
+    </main>
+
   )
 }
