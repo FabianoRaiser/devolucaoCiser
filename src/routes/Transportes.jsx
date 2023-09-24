@@ -1,10 +1,14 @@
-import { Botao } from "components/ui/UI"
+import { ToolBarTrans } from "components/transportes/ToolBarTrans";
+import { Outlet } from "react-router-dom";
+import { StyledTransportes } from "styles/StylesTransportes";
 
 export const Transportes = () => {
   return (
-    <main>
-      <Botao>Nova Autorização</Botao>  
-    </main>
-
-  )
-}
+    <StyledTransportes>
+      <ToolBarTrans />
+      <main>
+        <Outlet />
+      </main>
+    </StyledTransportes>
+  );
+};

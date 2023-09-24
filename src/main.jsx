@@ -2,9 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home } from "routes/Home.jsx"
+import { Home } from "routes/Home.jsx";
 import { Devolução } from "routes/Devolucao.jsx";
 import { Transportes } from "routes/Transportes.jsx";
+import { TransAutorizacoes } from "routes/TransAutorizacoes.jsx";
+import TransAtrasados from "routes/TransAtrasados.jsx";
+import { TransPendentes } from "routes/TransPendentes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "devolucao",
@@ -23,6 +26,20 @@ const router = createBrowserRouter([
       {
         path: "transportes",
         element: <Transportes />,
+        children: [
+          {
+            path: "autorizacoes",
+            element: <TransAutorizacoes />,
+          },
+          {
+            path: "atrasados",
+            element: <TransAtrasados />,
+          },
+          {
+            path: "pedentes",
+            element: <TransPendentes />,
+          },
+        ],
       },
     ],
   },
