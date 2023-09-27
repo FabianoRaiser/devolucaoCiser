@@ -8,15 +8,20 @@ import { Transportes } from "routes/Transportes.jsx";
 import { TransAutorizacoes } from "routes/TransAutorizacoes.jsx";
 import TransAtrasados from "routes/TransAtrasados.jsx";
 import { TransPendentes } from "routes/TransPendentes.jsx";
+import { Login } from "routes/Login.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Login />,
+  },
+  {
+    path: "inicio",
     element: <App />,
 
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {

@@ -1,16 +1,22 @@
 import styled from "styled-components";
-import { cor_azulClaro, cor_azulEscuro } from "./variaveis";
+import { cor_azulClaro, cor_azulEscuro, cor_vermelho } from "./variaveis";
 
 export const Botao = styled.button`
 
-  background-color: ${cor_azulClaro};
+  background-color: ${cor_vermelho};
   color: white;
   font-weight: 700;
 
   border-radius: 0.5rem;
 `;
 
-export const Container = styled.section``;
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+`;
 
 export const Input = styled.input``;
 
