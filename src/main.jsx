@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "inicio",
+    path: "home",
     element: <App />,
 
     children: [
-      {
+      {     //SERÁ DESATIVADO
         path: "",
         element: <Home />,
       },
