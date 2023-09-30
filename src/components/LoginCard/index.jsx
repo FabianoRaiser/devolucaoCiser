@@ -6,6 +6,7 @@ export const LoginCard = () => {
   
   const [ usuario, setUsuario ] = useState('');
   const [ senha, setSenha] = useState('');
+  const [senhaInvalida, setSenhaInvalida ] = useState('')
   
   const atualizaUsuario = (event) => {
     setUsuario(event.target.value);
@@ -22,7 +23,11 @@ export const LoginCard = () => {
     
     switch (usuario) {
       case 'devolucao':
-        if
+        if (senha === 'devolucao') {
+          window.location.replace("/devolucao")
+        } else {
+          setSenhaInvalida(false)       
+        }
         break;
     
       default:
@@ -38,7 +43,11 @@ export const LoginCard = () => {
       <Label>Nome</Label>
       <Input type="text" onChange={atualizaUsuario}/>
       <Label>Senha</Label>
-      <Input type="password" />
+      <Input type="password" onChange={atualizaSenha}/>
+      { senhaInvalida 
+      ? {}
+      : ''
+      }
       <Botao onClick={logar}>Logar</Botao>
     </StyledLogin>
   );
