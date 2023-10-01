@@ -1,8 +1,7 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Botao, ToolBar } from "components/ui/UI";
+import { Botao, ToolBar, ToolLinkList } from "components/ui/UI";
 import { NavLink } from "react-router-dom";
-import { ToolLinkList } from "./styles";
 
 export const ToolBarTrans = () => {
   return (
