@@ -1,6 +1,7 @@
 import { Botao, Input, Label, SpanError } from "components/ui/UI";
 import { StyledLogin } from "./styles";
 import { useState } from "react";
+import { redirectDocument } from "react-router-dom";
 
 export const LoginCard = () => {
   const [usuario, setUsuario] = useState("");
@@ -27,14 +28,14 @@ export const LoginCard = () => {
     switch (usuario) {
       case "devolucao":
         if (senha == "devolucao") {
-          window.location.replace("/home/devolucao");
+          return redirectDocument("/home/devolucao");
         } else {
           setSenhaInvalida(true);
         }
         break;
       case "transportes":
         if (senha === "transportes") {
-          window.location.replace("/home/transportes");
+          return redirectDocument("/home/transportes");
         } else {
           setSenhaInvalida(true);
         }
