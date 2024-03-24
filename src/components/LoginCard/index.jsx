@@ -1,12 +1,15 @@
 import { Botao, Input, Label, SpanError } from "components/ui/UI";
 import { StyledLogin } from "./styles";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const LoginCard = () => {
   const [usuario, setUsuario] = useState("");
   const [usuarioInvalido, setUsuarioInvalido] = useState("");
   const [senha, setSenha] = useState("");
   const [senhaInvalida, setSenhaInvalida] = useState("");
+
+  const navigate = useNavigate();
 
   const atualizaUsuario = (event) => {
     setUsuario(event.target.value);
@@ -27,14 +30,14 @@ export const LoginCard = () => {
     switch (usuario) {
       case "devolucao":
         if (senha == "devolucao") {
-          window.location.replace("/home/devolucao");
+          navigate("/home/devolucao");
         } else {
           setSenhaInvalida(true);
         }
         break;
       case "transportes":
         if (senha === "transportes") {
-          window.location.replace("/home/transportes");
+          navigate("/home/transportes");
         } else {
           setSenhaInvalida(true);
         }
